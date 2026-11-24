@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cantina Los Recuerdos de Ella en Manrique, Medellín. Licores garantizados, cervezas bien frías y ambiente tradicional de barrio.">
-    <title>Inicio | Cantina Los Recuerdos de Ella</title>
+    <meta name="description" content="Ubicación en Manrique, Medellín, horarios de atención, preguntas frecuentes y formulario de contacto de Cantina Los Recuerdos de Ella.">
+    <title>Contacto | Cantina Los Recuerdos de Ella</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=uEfF5FkTppza&format=png&color=000000" type="image/x-icon">
+    <link rel="stylesheet" href="css/kit.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
 <body>
 
@@ -18,18 +19,18 @@
         <nav class="navbar navbar-expand-lg bg-superficie borde-inferior" aria-label="Navegación principal">
             <div class="container py-1">
                 <a class="navbar-brand" href="index.html">
-                    <span class="status-pulse"></span><img src="https://img.icons8.com/?size=100&id=2eyokYMv9Yng&format=png&color=000000" alt="">CANTINA LOS RECUERDOS DE ELLA
+                    <span class="status-pulse"></span>CANTINA LOS RECUERDOS DE ELLA
                 </a>
                 <button class="navbar-toggler borde-marca" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="menuPrincipal">
                     <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="carta.html">La Carta</a></li>
                         <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a></li>
                         <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
                             <button type="button" class="btn btn-marca btn-sm px-3" data-bs-toggle="modal" data-bs-target="#modalPromo">
                                 Promo de la noche
@@ -42,9 +43,167 @@
     </header>
 
     <main>
-       <h1>Nuestra información de contacto:</h1>
+        <!-- Encabezado de sección -->
+        <section class="container seccion-espaciada pb-4" id="hero-contacto">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-lg-8 text-center text-lg-start">
+                    <span class="badge insignia-marca px-3 py-2 mb-3">
+                        <span class="status-pulse"></span>UBICACIÓN Y ATENCIÓN &bull; MANRIQUE
+                    </span>
+                    <h1 class="display-5 mb-3">Encuéntranos en el Barrio</h1>
+                    <p class="texto-suave hero-descripcion mx-auto mx-lg-0 mb-4">
+                        Llega directo a nuestra barra en Manrique, consulta nuestros horarios de atención, resuelve tus dudas al instante o déjanos tus datos para comunicarnos contigo.
+                    </p>
+                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+                        <button type="button" class="btn btn-marca" data-bs-toggle="modal" data-bs-target="#modalFaq">
+                            Preguntas frecuentes
+                        </button>
+                        <a href="#formulario-contacto" class="btn btn-borde-oscuro">
+                            Solicitar que te contactemos &darr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-       
+        <!-- Mapa y Horario de Atención -->
+        <section class="container seccion-espaciada pt-4" id="ubicacion-horarios">
+            <div class="row g-4 align-items-stretch">
+                <!-- Columna Mapa -->
+                <div class="col-12 col-lg-7">
+                    <div class="marco-terminal h-100 d-flex flex-column">
+                        <div class="barra-terminal">
+                            <span class="etiqueta-mono">
+                                <span class="status-pulse"></span>MAPA DEL SECTOR
+                            </span>
+                            <span class="titulo-terminal">Carrera 45 # 66-24 &bull; Manrique Central, Medellín</span>
+                        </div>
+                        <div class="contenedor-mapa flex-grow-1">
+                            <iframe
+                                src="https://www.openstreetmap.org/export/embed.html?bbox=-75.5585%2C6.2655%2C-75.5470%2C6.2735&amp;layer=mapnik&amp;marker=6.2695%2C-75.5528"
+                                title="Mapa de ubicación de Cantina Los Recuerdos de Ella en Manrique, Medellín"
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <div class="p-3 bg-superficie borde-superior d-flex flex-wrap justify-content-between align-items-center gap-2">
+                            <span class="texto-suave small">A dos cuadras del Parque de Gaitán, sobre la vía principal.</span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Manrique+Central+Medellin" target="_blank" rel="noopener noreferrer" class="etiqueta-mono text-decoration-none">
+                                Abrir en Google Maps &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Horario de Atención y Acceso rápido a FAQ -->
+                <div class="col-12 col-lg-5 d-flex flex-column gap-4">
+                    <article class="card bg-tarjeta borde-marca flex-grow-1">
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="indicador-dato positivo mb-2">01 // JORNADA CONTINUA</div>
+                                <h2 class="h4 texto-dorado mb-3">Horario de Atención</h2>
+                                <p class="texto-suave small mb-4">
+                                    Abrimos nuestras puertas todos los días de la semana para recibirte con cerveza helada y música tradicional.
+                                </p>
+
+                                <ul class="list-unstyled d-flex flex-column gap-3 mb-4">
+                                    <li class="d-flex justify-content-between align-items-center pb-2 border-bottom-dotted">
+                                        <span class="texto-suave small">Lunes a Miércoles</span>
+                                        <span class="etiqueta-mono">2:00 p.m. &ndash; 1:00 a.m.</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center pb-2 border-bottom-dotted">
+                                        <span class="texto-suave small">Jueves a Sábado</span>
+                                        <span class="etiqueta-mono">2:00 p.m. &ndash; 2:00 a.m.</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center pb-2 border-bottom-dotted">
+                                        <span class="texto-suave small">Domingos y Festivos</span>
+                                        <span class="etiqueta-mono">2:00 p.m. &ndash; 12:00 a.m.</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="p-3 rounded-3 borde-marca" style="background-color: rgba(14, 11, 10, 0.65);">
+                                <div class="indicador-dato mb-1">02 // LÍNEA DIRECTA</div>
+                                <p class="texto-suave small mb-1"><strong class="text-white">Dirección:</strong> Cra. 45 # 66-24, Manrique, Medellín</p>
+                                <p class="texto-suave small mb-0"><strong class="text-white">WhatsApp:</strong> +57 300 123 4567</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta disparadora del Modal de Preguntas Frecuentes -->
+                    <article class="card bg-tarjeta borde-marca">
+                        <div class="card-body p-4 d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-between gap-3">
+                            <div>
+                                <div class="indicador-dato ambar mb-1">03 // CENTRO DE AYUDA</div>
+                                <h3 class="h5 texto-dorado mb-1">¿Tienes dudas antes de venir?</h3>
+                                <p class="texto-suave small mb-0">Consulta covers, domicilios, métodos de pago y reservas.</p>
+                            </div>
+                            <button type="button" class="btn btn-borde-oscuro flex-shrink-0" data-bs-toggle="modal" data-bs-target="#modalFaq">
+                                Ver FAQ
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario para que nosotros lo contactemos -->
+        <section class="container seccion-espaciada pt-3" id="formulario-contacto">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-9">
+                    <div class="card bg-tarjeta borde-marca p-4 p-md-5">
+                        <div class="text-center mb-4">
+                            <span class="eyebrow-mono d-block mb-2">NOSOTROS TE LLAMAMOS O ESCRIBIMOS</span>
+                            <h2 class="texto-dorado">¿Quieres que te contactemos?</h2>
+                            <p class="texto-suave small mb-0">
+                                Déjanos tus datos si deseas organizar una celebración, cotizar un pedido grande a domicilio o recibir atención personalizada.
+                            </p>
+                        </div>
+
+                        <div id="alertaContacto" class="alert alerta-reserva d-none mb-4" role="alert"></div>
+
+                        <form id="formContacto" class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <label for="nombreContacto" class="form-label etiqueta-campo">Nombre completo</label>
+                                <input type="text" class="form-control campo-cantina" id="nombreContacto" name="nombre" placeholder="Ej. Valentina Gómez" required>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label for="telefonoContacto" class="form-label etiqueta-campo">Teléfono o WhatsApp</label>
+                                <input type="tel" class="form-control campo-cantina" id="telefonoContacto" name="telefono" placeholder="Ej. +57 311 456 7890" required>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label for="correoContacto" class="form-label etiqueta-campo">Correo electrónico (opcional)</label>
+                                <input type="email" class="form-control campo-cantina" id="correoContacto" name="correo" placeholder="Ej. valentina@correo.com">
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label for="motivoContacto" class="form-label etiqueta-campo">Motivo de contacto</label>
+                                <select class="form-select campo-cantina" id="motivoContacto" name="motivo" required>
+                                    <option value="" selected disabled>Selecciona una opción...</option>
+                                    <option value="Cotización de evento o cumpleaños">Cotización de evento o cumpleaños</option>
+                                    <option value="Pedido de licores a domicilio">Pedido de licores a domicilio</option>
+                                    <option value="Consulta sobre programación musical">Consulta sobre programación musical</option>
+                                    <option value="Objetos olvidados en la cantina">Objetos olvidados en la cantina</option>
+                                    <option value="Sugerencias o felicitaciones">Sugerencias o felicitaciones</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="mensajeContacto" class="form-label etiqueta-campo">Mensaje y franja horaria en que prefieres que te contactemos</label>
+                                <textarea class="form-control campo-cantina" id="mensajeContacto" name="mensaje" rows="4" placeholder="Cuéntanos qué necesitas y a qué hora te queda más fácil recibir nuestra llamada o mensaje de WhatsApp." required></textarea>
+                            </div>
+
+                            <div class="col-12 d-flex flex-column flex-sm-row justify-content-end gap-3 mt-4">
+                                <button type="reset" class="btn btn-borde-oscuro">Limpiar formulario</button>
+                                <button type="submit" class="btn btn-marca px-4">Enviar solicitud</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="bg-footer borde-superior pt-5 pb-4 mt-5">
@@ -72,6 +231,98 @@
         </div>
     </footer>
 
+    <!-- Modal: Preguntas Frecuentes -->
+    <div class="modal fade" id="modalFaq" tabindex="-1" aria-labelledby="modalFaqTitulo" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content tarjeta-clara">
+                <div class="modal-header border-bottom-dotted">
+                    <h2 class="modal-title fs-5" id="modalFaqTitulo">
+                        <span class="status-pulse"></span>Preguntas Frecuentes
+                    </h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="accordion accordion-flush acordeon-cantina" id="acordeonFaq">
+                        <!-- Pregunta 1 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faqHeading1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                                    ¿Cobran cover o valor de entrada los fines de semana?
+                                </button>
+                            </h3>
+                            <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#acordeonFaq">
+                                <div class="accordion-body texto-suave small">
+                                    No, la entrada es completamente libre todos los días de la semana. Solo pagas tu consumo en barra o mesa.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pregunta 2 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faqHeading2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                                    ¿Hacen domicilios en el sector de Manrique?
+                                </button>
+                            </h3>
+                            <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#acordeonFaq">
+                                <div class="accordion-body texto-suave small">
+                                    Sí, despachamos botellas de licor selladas, petacos de cerveza fría, micheladas y bebidas hidratantes en Manrique Central, Campo Valdés, Aranjuez y alrededores hasta la 1:30 a.m.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pregunta 3 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faqHeading3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                                    ¿Qué medios de pago aceptan en la cantina?
+                                </button>
+                            </h3>
+                            <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#acordeonFaq">
+                                <div class="accordion-body texto-suave small">
+                                    Aceptamos efectivo, transferencias inmediatas por Nequi, Bancolombia y tarjetas débito o crédito mediante datáfono en barra.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pregunta 4 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faqHeading4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                                    ¿Puedo reservar mesa para celebrar un cumpleaños?
+                                </button>
+                            </h3>
+                            <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#acordeonFaq">
+                                <div class="accordion-body texto-suave small">
+                                    Claro que sí. Puedes agendar tu mesa desde la sección de <a href="eventos.html#seccion-reserva" class="text-tiger-gold">Eventos</a> o dejarnos tus datos en el formulario de esta página. El cumpleañero recibe un shot de cortesía presentando su cédula.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pregunta 5 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faqHeading5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                                    ¿Cuál es la edad mínima para el ingreso?
+                                </button>
+                            </h3>
+                            <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#acordeonFaq">
+                                <div class="accordion-body texto-suave small">
+                                    El ingreso es exclusivo para mayores de 18 años presentando documento de identidad físico o cédula digital vigente.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-top-dotted gap-3">
+                    <button type="button" class="btn btn-borde-oscuro" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="https://wa.me/573001234567" class="btn btn-oscuro-cta" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Promo de la noche (conservado de la barra de navegación) -->
     <div class="modal fade" id="modalPromo" tabindex="-1" aria-labelledby="modalPromoTitulo" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content tarjeta-clara">
@@ -95,5 +346,24 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const formContacto = document.getElementById('formContacto');
+        const alertaContacto = document.getElementById('alertaContacto');
+
+        formContacto.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const nombre = document.getElementById('nombreContacto').value;
+            const telefono = document.getElementById('telefonoContacto').value;
+            const motivo = document.getElementById('motivoContacto').value;
+
+            alertaContacto.innerHTML = `
+                <strong class="text-tiger-gold d-block mb-1">¡Mensaje enviado con éxito!</strong>
+                <span class="small">Gracias, <strong>${nombre}</strong>. Recibimos tu solicitud sobre <strong>${motivo}</strong> y pronto nos comunicaremos contigo al <strong>${telefono}</strong>.</span>
+            `;
+            alertaContacto.classList.remove('d-none');
+            formContacto.reset();
+        });
+    </script>
 </body>
 </html>
