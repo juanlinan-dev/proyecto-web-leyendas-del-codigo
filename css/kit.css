@@ -335,7 +335,7 @@
 @media (max-width: 575.98px) {
     .navbar .container {
         gap: 8px;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
 
     .navbar-brand {
