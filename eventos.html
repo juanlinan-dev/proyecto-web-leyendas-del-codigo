@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cantina Los Recuerdos de Ella en Manrique, Medellín. Licores garantizados, cervezas bien frías y ambiente tradicional de barrio.">
-    <title>Inicio | Cantina Los Recuerdos de Ella</title>
+    <meta name="description" content="Programación semanal, noches temáticas y reservas de mesa en Cantina Los Recuerdos de Ella, Manrique, Medellín.">
+    <title>Eventos | Cantina Los Recuerdos de Ella</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=uEfF5FkTppza&format=png&color=000000" type="image/x-icon">
+    <link rel="stylesheet" href="css/kit.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
 <body>
 
@@ -18,17 +19,17 @@
         <nav class="navbar navbar-expand-lg bg-superficie borde-inferior" aria-label="Navegación principal">
             <div class="container py-1">
                 <a class="navbar-brand" href="index.html">
-                    <span class="status-pulse"></span><img src="https://img.icons8.com/?size=100&id=2eyokYMv9Yng&format=png&color=000000" alt="">CANTINA LOS RECUERDOS DE ELLA
+                    <span class="status-pulse"></span>CANTINA LOS RECUERDOS DE ELLA
                 </a>
                 <button class="navbar-toggler borde-marca" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="menuPrincipal">
                     <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="carta.html">La Carta</a></li>
                         <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="eventos.html">Eventos</a></li>
                         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                         <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
                             <button type="button" class="btn btn-marca btn-sm px-3" data-bs-toggle="modal" data-bs-target="#modalPromo">
@@ -42,9 +43,239 @@
     </header>
 
     <main>
-       <h1>Nuestra programación semanal: </h1>
+        <!-- Encabezado de sección -->
+        <section class="container seccion-espaciada pb-4" id="hero-eventos">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-lg-8 text-center text-lg-start">
+                    <span class="badge insignia-marca px-3 py-2 mb-3">
+                        <span class="status-pulse"></span>CARTELERA SEMANAL &bull; MANRIQUE
+                    </span>
+                    <h1 class="display-5 mb-3">Eventos y Noches de Cantina</h1>
+                    <p class="texto-suave hero-descripcion mx-auto mx-lg-0 mb-4">
+                        Cada día de la semana tiene su propio ambiente en el barrio. Revisa nuestra programación, arma tu combo y asegura tu mesa con anticipación.
+                    </p>
+                    <a href="#seccion-reserva" class="btn btn-marca">Agendar mi reserva &darr;</a>
+                </div>
+            </div>
+        </section>
 
-       
+        <!-- Cartelera de eventos temáticos -->
+        <section class="container seccion-espaciada pt-4" id="cartelera-eventos">
+            <div class="text-center mb-5">
+                <span class="eyebrow-mono d-block mb-2">PROGRAMACIÓN TRADICIONAL</span>
+                <h2 class="texto-dorado">Noches Temáticas de la Semana</h2>
+                <p class="texto-suave">Música, parche y tradición colombiana de lunes a domingo.</p>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Evento 1 -->
+                <div class="col">
+                    <article class="card h-100 bg-tarjeta borde-marca">
+                        <div class="evento-header">
+                            <div class="indicador-dato mb-1">01 // DESENGUAYABE</div>
+                            <h3 class="card-title texto-dorado mb-0">Lunes de Recuperar el Hogar</h3>
+                        </div>
+                        <div class="contenedor-imagen-evento">
+                            <img src="img/evento-lunes.png" alt="Cervezas frías y bebidas hidratantes en la barra durante el Lunes de Recuperar el Hogar" class="imagen-evento">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="horario-evento">
+                                    <span class="status-pulse"></span>Lunes &bull; 4:00 p.m. a 11:00 p.m.
+                                </span>
+                            </div>
+                            <p class="card-text texto-suave small mb-0">
+                                Para bajar el ritmo del fin de semana en calma: micheladas bien frías, sueros hidratantes, baladas de plancha a volumen moderado y mesa tranquila para conversar.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Evento 2 -->
+                <div class="col">
+                    <article class="card h-100 bg-tarjeta borde-marca">
+                        <div class="evento-header">
+                            <div class="indicador-dato mb-1">02 // MITAD DE SEMANA</div>
+                            <h3 class="card-title texto-dorado mb-0">Miércoles de Parqués y Media</h3>
+                        </div>
+                        <div class="contenedor-imagen-evento">
+                            <img src="img/evento-miercoles.png" alt="Amigos jugando parqués y compartiendo una botella en mesa de cantina" class="imagen-evento">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="horario-evento">
+                                    <span class="status-pulse"></span>Miércoles &bull; 5:00 p.m. a 1:00 a.m.
+                                </span>
+                            </div>
+                            <p class="card-text texto-suave small mb-0">
+                                Cortamos la semana con préstamo gratuito de parqués y dominó en tu mesa, son cubano de fondo y precio especial en medias de aguardiente y ron hasta las 9:00 p.m.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Evento 3 -->
+                <div class="col">
+                    <article class="card h-100 bg-tarjeta borde-marca">
+                        <div class="evento-header">
+                            <div class="indicador-dato positivo mb-1">03 // CLÁSICO DE BARRIO</div>
+                            <h3 class="card-title texto-dorado mb-0">Jueves de Despecho</h3>
+                        </div>
+                        <div class="contenedor-imagen-evento">
+                            <img src="img/evento-jueves.png" alt="Ambiente nocturno con iluminación cálida para noche de música popular y despecho" class="imagen-evento">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="horario-evento">
+                                    <span class="status-pulse"></span>Jueves &bull; 6:00 p.m. a 2:00 a.m.
+                                </span>
+                            </div>
+                            <p class="card-text texto-suave small mb-0">
+                                La noche más sentida de Manrique. Especial de música popular, tangos de cantina y dedicatorias en vivo para cantar a todo pulmón con los clásicos de Darío Gómez y Luis Alberto Posada.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Evento 4 -->
+                <div class="col">
+                    <article class="card h-100 bg-tarjeta borde-marca">
+                        <div class="evento-header">
+                            <div class="indicador-dato mb-1">04 // AZOTE DE BALDOSA</div>
+                            <h3 class="card-title texto-dorado mb-0">Viernes de Salsa Brava y Viejoteca</h3>
+                        </div>
+                        <div class="contenedor-imagen-evento">
+                            <img src="img/evento-viernes.png" alt="Noche de viernes con luces cálidas y ambiente festivo de salsa clásica" class="imagen-evento">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="horario-evento">
+                                    <span class="status-pulse"></span>Viernes &bull; 6:00 p.m. a 2:00 a.m.
+                                </span>
+                            </div>
+                            <p class="card-text texto-suave small mb-0">
+                                Arranca el fin de semana con descarga de salsa clásica, guaguancó y viejoteca bailable. Ideal para venir en grupo, pedir botella y asegurar mesa temprano.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Evento 5 -->
+                <div class="col">
+                    <article class="card h-100 bg-tarjeta borde-marca">
+                        <div class="evento-header">
+                            <div class="indicador-dato positivo mb-1">05 // NOCHE ESTELAR</div>
+                            <h3 class="card-title texto-dorado mb-0">Sábado de Parranda Paisa</h3>
+                        </div>
+                        <div class="contenedor-imagen-evento">
+                            <img src="img/evento-sabado.png" alt="Brindis con copas de aguardiente y cervezas frías en sábado de parranda" class="imagen-evento">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="horario-evento">
+                                    <span class="status-pulse"></span>Sábado &bull; 4:00 p.m. a 2:00 a.m.
+                                </span>
+                            </div>
+                            <p class="card-text texto-suave small mb-0">
+                                Mezcla crossover con vallenato de la vieja guardia, música parrandera, popular y tropical. Celebración de cumpleaños con shot de cortesía para el homenajeado.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Evento 6 -->
+                <div class="col">
+                    <article class="card h-100 bg-tarjeta borde-marca">
+                        <div class="evento-header">
+                            <div class="indicador-dato mb-1">06 // CIERRE DE SEMANA</div>
+                            <h3 class="card-title texto-dorado mb-0">Domingo de Remate y Guayabo</h3>
+                        </div>
+                        <div class="contenedor-imagen-evento">
+                            <img src="img/evento-domingo.png" alt="Tarde de domingo con cervezas heladas y ambiente relajado de barrio" class="imagen-evento">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="horario-evento">
+                                    <span class="status-pulse"></span>Domingo &bull; 2:00 p.m. a 11:00 p.m.
+                                </span>
+                            </div>
+                            <p class="card-text texto-suave small mb-0">
+                                Tarde de fútbol en pantalla, petacos de cerveza bien fríos, tangos y boleros para despedir el fin de semana entre amigos antes de volver a la rutina.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario para agendar reserva -->
+        <section class="container seccion-espaciada pt-3" id="seccion-reserva">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-9">
+                    <div class="card bg-tarjeta borde-marca p-4 p-md-5">
+                        <div class="text-center mb-4">
+                            <span class="eyebrow-mono d-block mb-2">ASEGURA TU MESA</span>
+                            <h2 class="texto-dorado">Agenda tu Reserva</h2>
+                            <p class="texto-suave small mb-0">
+                                Separa tu espacio para cualquiera de nuestros eventos semanales o celebraciones especiales en Manrique.
+                            </p>
+                        </div>
+
+                        <div id="alertaReserva" class="alert alerta-reserva d-none mb-4" role="alert"></div>
+
+                        <form id="formReserva" class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <label for="nombreReserva" class="form-label etiqueta-campo">Nombre completo</label>
+                                <input type="text" class="form-control campo-cantina" id="nombreReserva" name="nombre" placeholder="Ej. Camilo Restrepo" required>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label for="telefonoReserva" class="form-label etiqueta-campo">Celular / WhatsApp</label>
+                                <input type="tel" class="form-control campo-cantina" id="telefonoReserva" name="telefono" placeholder="Ej. +57 300 123 4567" required>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label for="eventoReserva" class="form-label etiqueta-campo">Evento temático</label>
+                                <select class="form-select campo-cantina" id="eventoReserva" name="evento" required>
+                                    <option value="" selected disabled>Selecciona una noche...</option>
+                                    <option value="Lunes de Recuperar el Hogar">Lunes de Recuperar el Hogar</option>
+                                    <option value="Miércoles de Parqués y Media">Miércoles de Parqués y Media</option>
+                                    <option value="Jueves de Despecho">Jueves de Despecho</option>
+                                    <option value="Viernes de Salsa Brava y Viejoteca">Viernes de Salsa Brava y Viejoteca</option>
+                                    <option value="Sábado de Parranda Paisa">Sábado de Parranda Paisa</option>
+                                    <option value="Domingo de Remate y Guayabo">Domingo de Remate y Guayabo</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label for="personasReserva" class="form-label etiqueta-campo">Número de personas</label>
+                                <input type="number" class="form-control campo-cantina" id="personasReserva" name="personas" min="1" max="25" value="4" required>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label for="fechaReserva" class="form-label etiqueta-campo">Fecha</label>
+                                <input type="date" class="form-control campo-cantina" id="fechaReserva" name="fecha" required>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label for="horaReserva" class="form-label etiqueta-campo">Hora de llegada</label>
+                                <input type="time" class="form-control campo-cantina" id="horaReserva" name="hora" value="20:00" required>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="notasReserva" class="form-label etiqueta-campo">Notas adicionales o pedido anticipado (opcional)</label>
+                                <textarea class="form-control campo-cantina" id="notasReserva" name="notas" rows="3" placeholder="Ej. Celebramos un cumpleaños, preferimos mesa cerca a la barra o tener lista una media de Aguardiente Antioqueño."></textarea>
+                            </div>
+
+                            <div class="col-12 d-flex flex-column flex-sm-row justify-content-end gap-3 mt-4">
+                                <button type="reset" class="btn btn-borde-oscuro">Limpiar datos</button>
+                                <button type="submit" class="btn btn-marca px-4">Confirmar reserva</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="bg-footer borde-superior pt-5 pb-4 mt-5">
@@ -95,5 +326,26 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const formReserva = document.getElementById('formReserva');
+        const alertaReserva = document.getElementById('alertaReserva');
+
+        formReserva.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const nombre = document.getElementById('nombreReserva').value;
+            const evento = document.getElementById('eventoReserva').value;
+            const fecha = document.getElementById('fechaReserva').value;
+            const hora = document.getElementById('horaReserva').value;
+            const personas = document.getElementById('personasReserva').value;
+
+            alertaReserva.innerHTML = `
+                <strong class="text-tiger-gold d-block mb-1">¡Solicitud de reserva registrada!</strong>
+                <span class="small">Gracias, <strong>${nombre}</strong>. Te esperamos para <strong>${evento}</strong> el <strong>${fecha}</strong> a las <strong>${hora}</strong> (${personas} personas). Te confirmaremos por WhatsApp en unos minutos.</span>
+            `;
+            alertaReserva.classList.remove('d-none');
+            formReserva.reset();
+        });
+    </script>
 </body>
 </html>
