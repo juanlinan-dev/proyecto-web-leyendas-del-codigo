@@ -1,0 +1,368 @@
+/* ==========================================================================
+   kit.css
+   Kit de componentes: tarjetas, navbar, botones, insignias, marco terminal,
+   hero, enlaces de footer.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Tarjeta
+   -------------------------------------------------------------------------- */
+.bg-tarjeta {
+    background: linear-gradient(
+        160deg,
+        rgba(28, 22, 18, 0.70) 0%,
+        rgba(15, 13, 12, 0.80) 100%
+    );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: var(--radius-cards);
+    box-shadow: var(--shadow-subtle);
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.bg-tarjeta::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--color-amber-glow), var(--color-warm-gold), transparent);
+    opacity: 0.55;
+    transition: opacity 0.25s ease;
+}
+
+.bg-tarjeta:hover,
+.bg-tarjeta:focus-within {
+    border-color: rgba(245, 166, 35, 0.55);
+    transform: translateY(-4px);
+    box-shadow:
+        0 14px 32px -10px rgba(0, 0, 0, 0.7),
+        0 0 24px -6px rgba(245, 166, 35, 0.28);
+}
+
+.bg-tarjeta:hover::before,
+.bg-tarjeta:focus-within::before {
+    opacity: 1;
+}
+
+.tarjeta-clara {
+    background-color: rgba(18, 14, 12, 0.92);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(245, 166, 35, 0.36);
+    border-radius: var(--radius-cards);
+    color: var(--color-frost-text);
+    box-shadow: var(--shadow-subtle-2), 0 0 36px rgba(245, 166, 35, 0.2);
+}
+
+/* --------------------------------------------------------------------------
+   Navbar
+   -------------------------------------------------------------------------- */
+.navbar {
+    padding: 12px 0;
+}
+
+.navbar-brand {
+    font-size: clamp(11px, 2.8vw, var(--text-nav));
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    color: var(--color-cloud-white);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+}
+
+.navbar-brand:hover {
+    color: var(--color-amber-soft);
+}
+
+.brand-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    flex-shrink: 0;
+    filter: invert(1) brightness(1.1);
+}
+
+.brand-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nav-link {
+    font-size: var(--text-nav);
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--color-misted-slate);
+    padding: 8px 12px;
+    border-radius: var(--radius-buttons);
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--color-cloud-white);
+    background-color: rgba(245, 166, 35, 0.14);
+}
+
+/* --------------------------------------------------------------------------
+   Indicador de estado (pulso)
+   -------------------------------------------------------------------------- */
+.status-pulse {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    border-radius: var(--radius-pills);
+    background-color: var(--color-amber-glow);
+    box-shadow: 0 0 10px rgba(245, 166, 35, 0.9);
+    margin-right: 6px;
+    vertical-align: middle;
+    animation: pulse-live 2.2s ease-in-out infinite;
+}
+
+@keyframes pulse-live {
+    0%, 100% {
+        box-shadow: 0 0 6px rgba(245, 166, 35, 0.85);
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: 0 0 14px rgba(255, 213, 132, 0.95);
+        transform: scale(1.2);
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Hero
+   -------------------------------------------------------------------------- */
+.hero-ambiental {
+    position: relative;
+    border-bottom: 1px solid rgba(245, 166, 35, 0.14);
+}
+
+.hero-descripcion {
+    max-width: 540px;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.75);
+}
+
+/* --------------------------------------------------------------------------
+   Insignia (badge / pill)
+   -------------------------------------------------------------------------- */
+.insignia-marca {
+    background-color: rgba(16, 13, 12, 0.72);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(245, 166, 35, 0.38);
+    color: var(--color-amber-soft);
+    border-radius: var(--radius-pills);
+    font-size: clamp(12px, 2.5vw, var(--text-nav));
+    font-weight: 500;
+    letter-spacing: 0.7px;
+}
+
+/* --------------------------------------------------------------------------
+   Botones
+   -------------------------------------------------------------------------- */
+.btn-marca,
+.btn-oscuro-cta {
+    background: linear-gradient(135deg, var(--color-amber-soft) 0%, var(--color-amber-glow) 100%);
+    color: #140e0a;
+    border: 1px solid rgba(255, 213, 132, 0.8);
+    border-radius: var(--radius-buttons);
+    font-size: var(--text-nav);
+    font-weight: 700;
+    line-height: 20px;
+    padding: 10px 18px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.btn-marca:hover,
+.btn-oscuro-cta:hover {
+    color: #140e0a;
+    filter: brightness(1.06);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 22px -6px rgba(245, 166, 35, 0.6);
+}
+
+.btn-borde-oscuro {
+    background-color: rgba(18, 14, 12, 0.68);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: var(--color-frost-text);
+    border: 1px solid rgba(255, 213, 132, 0.28);
+    border-radius: var(--radius-buttons);
+    font-size: var(--text-nav);
+    font-weight: 500;
+    line-height: 20px;
+    padding: 10px 18px;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-borde-oscuro:hover {
+    background-color: rgba(32, 24, 18, 0.88);
+    border-color: var(--color-amber-glow);
+    color: var(--color-cloud-white);
+}
+
+/* --------------------------------------------------------------------------
+   Marco terminal (con imagen hero)
+   -------------------------------------------------------------------------- */
+.marco-terminal {
+    background-color: rgba(18, 14, 12, 0.76);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(245, 166, 35, 0.34);
+    border-radius: var(--radius-cards);
+    overflow: hidden;
+    box-shadow:
+        var(--shadow-subtle-2),
+        0 0 36px rgba(245, 166, 35, 0.18),
+        0 0 44px rgba(212, 162, 76, 0.18);
+    transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.marco-terminal:hover {
+    transform: translateY(-4px);
+    border-color: rgba(245, 166, 35, 0.62);
+    box-shadow:
+        var(--shadow-subtle-2),
+        0 0 46px rgba(245, 166, 35, 0.3),
+        0 0 48px rgba(212, 162, 76, 0.26);
+}
+
+.barra-terminal {
+    background-color: rgba(14, 11, 10, 0.85);
+    border-bottom: 1px solid rgba(245, 166, 35, 0.16);
+    padding: 11px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.titulo-terminal {
+    font-size: clamp(11px, 2.4vw, var(--text-caption));
+    font-weight: 500;
+    color: var(--color-misted-slate);
+    letter-spacing: 0.4px;
+    text-align: right;
+}
+
+.contenedor-imagen-hero {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    background-color: var(--color-wood-dark);
+}
+
+.imagen-hero {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: contrast(1.06) saturate(1.14);
+    transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+}
+
+.marco-terminal:hover .imagen-hero {
+    transform: scale(1.05);
+}
+
+.overlay-imagen-hero {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(212, 162, 76, 0.10) 0%,
+        rgba(0, 0, 0, 0) 45%,
+        rgba(12, 9, 8, 0.72) 100%
+    );
+    pointer-events: none;
+}
+
+.etiqueta-flotante-hero {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    background-color: rgba(14, 11, 10, 0.8);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(245, 166, 35, 0.42);
+    color: var(--color-frost-text);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: var(--radius-pills);
+}
+
+/* --------------------------------------------------------------------------
+   Enlaces de footer
+   -------------------------------------------------------------------------- */
+.link-footer {
+    color: var(--color-misted-slate);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.link-footer:hover {
+    color: var(--color-amber-soft);
+}
+
+/* --------------------------------------------------------------------------
+   Responsive de componentes
+   -------------------------------------------------------------------------- */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        margin-top: 12px;
+        padding: 12px;
+        background-color: rgba(16, 12, 10, 0.92);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(245, 166, 35, 0.24);
+        border-radius: var(--radius-cards);
+    }
+
+    .nav-link {
+        padding: 10px 12px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar .container {
+        gap: 8px;
+        flex-wrap: nowrap;
+    }
+
+    .navbar-brand {
+        gap: 6px;
+        max-width: calc(100% - 60px);
+    }
+
+    .brand-icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .etiqueta-flotante-hero {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Accesibilidad: movimiento reducido
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+    .status-pulse,
+    .bg-tarjeta,
+    .marco-terminal,
+    .imagen-hero {
+        animation: none;
+        transition: none;
+    }
+}
